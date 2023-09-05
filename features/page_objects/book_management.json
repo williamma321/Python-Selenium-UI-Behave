@@ -1,0 +1,8 @@
+{
+  "BookMgePage": {
+    "bookManagementText": "/html/body/form/div[3]/div[2]/h2",
+    "bookManageTable": "",
+    "logout_url": "/html/body/form/div[3]/div[1]/div[2]/a",
+    "outOfPrint": "/html/body/form/div[3]/div[2]/div/table/tbody/tr[1]/th[7]"
+  }
+}

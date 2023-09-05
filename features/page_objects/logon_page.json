@@ -1,1 +1,8 @@
-
+{
+  "logonPage": {
+    "userNameEditorBox": "/html/body/form/div[3]/div[2]/div[2]/fieldset/p[1]/input",
+    "userPasswordEditorBox": "/html/body/form/div[3]/div[2]/div[2]/fieldset/p[2]/input",
+    "logonButton": "/html/body/form/div[3]/div[2]/div[2]/p/input",
+    "createNewBookLink": "/html/body/form/div[3]/div[2]/p/a"
+  }
+}
