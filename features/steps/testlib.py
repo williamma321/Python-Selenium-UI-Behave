@@ -50,6 +50,7 @@ def step_impl(context, status):
             'outOfPrint']).is_displayed()
     except Exception:
         is_button_visible = False
+        print(Exception)
     if status == 'OK':
         assert is_button_visible == True
     else:
