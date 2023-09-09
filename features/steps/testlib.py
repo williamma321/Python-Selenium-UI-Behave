@@ -47,8 +47,8 @@ def step_impl(context, status):
     book_manage_page_dict = context.page_object_dict
     the_driver = context.selenium_driver
     try:
-        is_button_visible = the_driver.find_element(By.XPATH, book_manage_page_dict['BookMgePage'][
-            'pagetable']).is_displayed()
+        is_button_visible = the_driver.find_element(By.LINK_TEXT, book_manage_page_dict['BookMgePage'][
+            'linkurltext']).is_displayed()
         print(is_button_visible)
     except Exception:
         is_button_visible = False
