@@ -5,6 +5,7 @@
     "logout_url": "/html/body/form/div[3]/div[1]/div[2]/a",
     "outOfPrint": "/html/body/form/div[3]/div[2]/div/table/tbody/tr[1]/th[7]",
     "pagetable" : "/html/body/form/div[3]/div[2]/div",
-    "dateAdded" : "/html/body/form/div[3]/div[2]/div/table/tbody/tr[1]/th[6]"
+    "dateAdded" : "/html/body/form/div[3]/div[2]/div/table/tbody/tr[1]/th[6]",
+    "linkurltext" : "(Create new book)"
   }
 }
