@@ -1,7 +1,6 @@
 name: environment
 
 dependencies:
-  - python=3.11
-  - behave=1.2.6
-  - selenium=4.12.0
-  - python-dotenv=1.0.0
+  - behave
+  - selenium
+  - python-dotenv
