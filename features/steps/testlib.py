@@ -38,6 +38,7 @@ def step_impl(context, password):
 @when(u'click on logon')
 def step_impl(context):
     context.login_button.click()
+    time.sleep(5)
 
 
 @then(u'the logon is {status}')
