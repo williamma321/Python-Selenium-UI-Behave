@@ -14,9 +14,12 @@ myPwd = os.getenv("LIB_PWD")
 PATH = os.getenv("SELENIUM_DRIVER_PATH", "/Users/irenema/Documents/Python Projects/Selenium-Python-demo/chromedriver")
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('disable-notifications')
+chrome_options.add_argument('no-sandbox')
+chrome_options.add_argument('disable-dev-shm-usage')
+chrome_options.add_argument('headless')
 prefs = {"profile.default_content_setting_values.notifications": 2}
 chrome_options.add_experimental_option("prefs", prefs)
-demo_driver = webdriver.Chrome()
+demo_driver = webdriver.Chrome(chrome_options)
 
 
 @fixture
