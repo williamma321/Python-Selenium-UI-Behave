@@ -49,9 +49,8 @@ def step_impl(context, status):
     try:
         is_button_visible = the_driver.find_element(By.XPATH, book_manage_page_dict['BookMgePage'][
             'outOfPrint']).is_displayed()
-    except Exception:
+    except:
         is_button_visible = False
-        print(Exception)
     if status == 'OK':
         assert is_button_visible == True
     else:
