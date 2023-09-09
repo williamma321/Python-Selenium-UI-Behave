@@ -46,10 +46,11 @@ def step_impl(context, status):
     context.page_object_dict = get_load_json_data("../page_objects/", "book_management.json")
     book_manage_page_dict = context.page_object_dict
     the_driver = context.selenium_driver
-  
-    is_button_visible = the_driver.find_element(By.XPATH, book_manage_page_dict['BookMgePage'][
-            'outOfPrint']).is_displayed()
-
+    try:
+        is_button_visible = the_driver.find_element(By.XPATH, book_manage_page_dict['BookMgePage'][
+            'pagetable']).is_displayed()
+    except Exception:
+        is_button_visible = False
     if status == 'OK':
         assert is_button_visible == True
     else:
